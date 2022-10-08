@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="author-library" />
+        <module name="auth-service" />
+        <module name="genre-library" />
+        <module name="books-library" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="auth-service" target="11" />
+      <module name="author-library" target="17" />
+      <module name="books-library" target="17" />
+      <module name="genre-library" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-service" options="-parameters" />
+      <module name="author-library" options="-parameters" />
+      <module name="books-library" options="-parameters" />
+      <module name="genre-library" options="-parameters" />
+    </option>
+  </component>
+</project>
